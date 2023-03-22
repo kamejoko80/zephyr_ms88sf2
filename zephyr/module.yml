@@ -1,0 +1,6 @@
+build:
+  cmake: .
+  kconfig: Kconfig.ms88sf2
+  settings:
+    board_root: .
+    dts_root: .

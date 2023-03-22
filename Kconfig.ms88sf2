@@ -1,0 +1,9 @@
+orsource "./$(BOARD_DIR)/Kconfig.board"
+orsource "./$(BOARD_DIR)/Kconfig"
+
+menu "MS88SF2 Zephyr"
+
+#rsource "modules/Kconfig"
+#rsource "drivers/Kconfig"
+
+endmenu

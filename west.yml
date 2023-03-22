@@ -1,0 +1,35 @@
+manifest:
+  version: "0.12"
+  remotes:
+    - name: zephyr_ms88sf2
+      url-base: git@github.com:kamejoko80/zephyr_ms88sf2.git
+    - name: zephyrproject
+      url-base: https://github.com/zephyrproject-rtos
+
+  defaults:
+    remote: zephyr_ms88sf2
+
+  projects:
+    - name: zephyr
+      repo-path: zephyr
+      remote: zephyrproject
+      revision: main
+      import:
+        name-whitelist:
+          - cmsis
+          - fatfs
+          - liblc3
+          - libmetal
+          - littlefs
+          - mbedtls
+          - mcuboot
+          - nanopb
+          - openthread
+          - picolibc
+          - tflite-micro
+          - thrift
+          - tinycrypt
+          - TraceRecorder
+          - segger
+  self:
+    path: ms88sf2
