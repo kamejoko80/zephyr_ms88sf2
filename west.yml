@@ -13,23 +13,22 @@ manifest:
     - name: zephyr
       repo-path: zephyr
       remote: zephyrproject
-      revision: main
+      revision: 41814f8c3bb076656197a78700d2b41ea9500c38
       import:
         name-whitelist:
           - cmsis
+          - edtt
           - fatfs
-          - liblc3
+          - hal_nordic
           - libmetal
           - littlefs
+          - lvgl
           - mbedtls
-          - mcuboot
-          - nanopb
+          - mcumgr
+          - mipi-sys-t
+          - net-tools
+          - nrf_hw_models
           - openthread
-          - picolibc
-          - tflite-micro
-          - thrift
-          - tinycrypt
-          - TraceRecorder
           - segger
   self:
     path: ms88sf2
