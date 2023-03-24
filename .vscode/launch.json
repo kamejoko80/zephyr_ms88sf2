@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceFolder}",
+            "searchDir":  ["${ZEPHYR_WORK_DIR}/zephyr"],
+            "armToolchainPath": "${config:TOOLCHAINS_DIR}/arm-zephyr-eabi/bin",            
+            "gdbPath":"${config:TOOLCHAINS_DIR}/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb.exe",
+            "toolchainPrefix": "arm-zephyr-eabi",
+            "executable": "build/zephyr/zephyr.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "device": "${config:DEVICE}",
+            "svdFile": "${config:SVD_FILE}",
+            "serverpath": "${config:GDB_SEVER_PATH}",
+            "servertype": "jlink",
+            "interface": "swd",
+            //"runToEntryPoint": "__start",
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "raw",
+            "preLaunchTask": "",
+        }
+    ]
+}

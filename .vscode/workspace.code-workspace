@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"terminal.integrated.defaultProfile.windows": "Git Bash",
+		"files.associations": {
+			"kernel.h": "c",
+			"printk.h": "c",
+			"zephyr.h": "c"
+		}
+	}
+}
