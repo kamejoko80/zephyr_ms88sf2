@@ -12,3 +12,18 @@ $ west update
 $ pip3 install -r zephyr/scripts/requirements.txt
 $ pip3 install -r bootloader/mcuboot/scripts/requirements.txt
 ```
+# Install cmake new version:
+
+```
+$ sudo apt-get remove cmake
+$ mkdir download
+$ cd download
+$ wget https://cmake.org/files/v3.29/cmake-3.29.1.tar.gz
+$ tar -xf cmake-3.29.1.tar.gz
+$ cd cmake-3.29.1
+$ ./configure
+$ make -j2
+$ cd bin
+$ export PATH=$PATH:$PWD
+```
+
