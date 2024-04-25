@@ -26,4 +26,12 @@ $ make -j2
 $ cd bin
 $ export PATH=$PATH:$PWD
 ```
+# Install SDK toolchains:
 
+```
+$ cd download
+$ wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.16.5-1/zephyr-sdk-0.16.5-1_linux-x86_64.tar.xz
+$ tar -xf zephyr-sdk-0.16.5-1_linux-x86_64.tar.xz
+$ cd zephyr-sdk-0.16.5-1
+$ ./setup.sh
+```
