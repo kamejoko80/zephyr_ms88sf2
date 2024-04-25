@@ -4,7 +4,14 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "Config",
+			"label": "MenuConfig",
+			"type": "shell",
+			"group": "build",
+			"command": "west build -t menuconfig -b ${config:BOARD} ${config:ZEPHYR_APP_DIR}",
+			"problemMatcher": []
+		},
+		{
+			"label": "GuiConfig",
 			"type": "shell",
 			"group": "build",
 			"command": "west build -t guiconfig -b ${config:BOARD} ${config:ZEPHYR_APP_DIR}",
