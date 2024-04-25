@@ -35,3 +35,9 @@ $ tar -xf zephyr-sdk-0.16.5-1_linux-x86_64.tar.xz
 $ cd zephyr-sdk-0.16.5-1
 $ ./setup.sh
 ```
+
+# Install other utilities:
+
+```
+$ sudo apt-get install ninja-build
+```
